@@ -1,0 +1,44 @@
+.debug{
+   .nav_bar{
+        height: 80px;
+        background-color: aquamarine;
+    }
+
+}
+ .nav_bar_vertical{
+        width: 90px;
+        height: 1000px;
+        background-color: black;
+    }
+
+
+.blue_bar{
+        height: 90px;
+        background-color: blue;
+    }
+
+    .box_1{
+        width: 700px;
+        height: 1000px;
+        background-color: brown;
+    }
+
+    .box_2{
+        height: 800px;
+        background-color: antiquewhite;
+    }
+
+    .box_2a{
+        height: 80px;
+        background-color: blueviolet;
+    }
+
+    .box_2b{
+        height: 40px;
+        background-color: aquamarine;
+    }
+
+    .box_3{
+        height: 800px;
+        background-color: chocolate;
+    }
