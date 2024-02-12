@@ -1,4 +1,4 @@
-/*MY UTILITY*/
+/*MY UTILITY
 .nav_bar {
     height: 80px;
     background-color: aquamarine;
@@ -15,7 +15,7 @@
 .blue_bar {
     height: 90px;
     background-color: blue;
-}
+}*/
 
 .box_1 {
     width: 700px;
@@ -44,8 +44,16 @@
 }
 
 
-
-
+:root{
+    --bd-darkest:#041f34;
+    --bd-light:#f8f9fa;
+    --bd-lighter:#fefeff;
+    --bd-secondary:#e5e5e5;
+    --bd-primary:#1b72e8;
+    --bd-danger:#dd3445;
+    --bd-succes:#3d9b6e;
+    --bd-standby:#ffc82b;
+}
 
 /*REGION HEADER*/
 
@@ -62,7 +70,11 @@ img {
 /*REGION MAIN*/
 .m_nav_vertical {
     background-image: url(./img/sidebar-bg.png);
-    background-color: #041f34;
-    min-width: 60px;
+    background-color: var(--bd-darkest);
     height: 100vh;
 }
+
+.m_blue_bar{
+    background-color: var(--bd-primary);
+}
+
