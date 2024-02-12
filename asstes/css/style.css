@@ -49,12 +49,20 @@
 
 /*REGION HEADER*/
 
-img{
+img {
     display: block;
-    
+
 }
 
-.m_logo_navbar_cell{
+.m_logo_navbar_cell {
     width: 50px;
 }
 
+
+/*REGION MAIN*/
+.m_nav_vertical {
+    background-image: url(./img/sidebar-bg.png);
+    background-color: #041f34;
+    min-width: 60px;
+    height: 100vh;
+}
