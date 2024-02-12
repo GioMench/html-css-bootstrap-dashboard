@@ -44,6 +44,7 @@
 }
 
 
+
 :root{
     --bd-darkest:#041f34;
     --bd-light:#f8f9fa;
@@ -76,5 +77,12 @@ img {
 
 .m_blue_bar{
     background-color: var(--bd-primary);
+}
+
+.m_link_bar{
+    padding:1px 3px;
+    background-color: #041f34;
+    border-radius: 20px;
+    
 }
 
