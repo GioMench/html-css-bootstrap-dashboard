@@ -1,44 +1,60 @@
-.debug{
-   .nav_bar{
-        height: 80px;
-        background-color: aquamarine;
-    }
-
+/*MY UTILITY*/
+.nav_bar {
+    height: 80px;
+    background-color: aquamarine;
 }
- .nav_bar_vertical{
-        width: 90px;
-        height: 1000px;
-        background-color: black;
-    }
 
 
-.blue_bar{
-        height: 90px;
-        background-color: blue;
-    }
+.nav_bar_vertical {
+    width: 90px;
+    height: 1000px;
+    background-color: black;
+}
 
-    .box_1{
-        width: 700px;
-        height: 1000px;
-        background-color: brown;
-    }
 
-    .box_2{
-        height: 800px;
-        background-color: antiquewhite;
-    }
+.blue_bar {
+    height: 90px;
+    background-color: blue;
+}
 
-    .box_2a{
-        height: 80px;
-        background-color: blueviolet;
-    }
+.box_1 {
+    width: 700px;
+    height: 1000px;
+    background-color: brown;
+}
 
-    .box_2b{
-        height: 40px;
-        background-color: aquamarine;
-    }
+.box_2 {
+    height: 800px;
+    background-color: antiquewhite;
+}
 
-    .box_3{
-        height: 800px;
-        background-color: chocolate;
-    }
+.box_2a {
+    height: 80px;
+    background-color: blueviolet;
+}
+
+.box_2b {
+    height: 40px;
+    background-color: aquamarine;
+}
+
+.box_3 {
+    height: 800px;
+    background-color: chocolate;
+}
+
+
+
+
+
+/*REGION HEADER*/
+
+img{
+    display: block;
+    
+}
+
+.m_logo_navbar_cell{
+    width: 50px;
+}
+
