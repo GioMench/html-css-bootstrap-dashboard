@@ -73,6 +73,11 @@ img {
     background-image: url(./img/sidebar-bg.png);
     background-color: var(--bd-darkest);
     height: 100vh;
+    
+}
+
+.m_container_right{
+    overflow: auto;
 }
 
 .m_blue_bar{
@@ -80,7 +85,7 @@ img {
 }
 
 .m_link_bar{
-    padding:1px 3px;
+    padding:2px 7px;
     background-color: #165bba;
     border-radius: 20px;
     font-size: x-small;
