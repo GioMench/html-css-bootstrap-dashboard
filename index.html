@@ -68,18 +68,29 @@
 
                             <div class="col col-12 col-sm-4">
                                 <div>
-                                    Boolean 
-                                    <span><a class="text-white text-decoration-none m_link_bar" href="#">Piano Blaze</a></span>
+                                    Boolean
+                                    <span><a class="text-white text-decoration-none m_link_bar" href="#">Piano
+                                            Blaze</a></span>
                                 </div>
                                 <div>
-                                    <span><a class="text-white text-decoration-none m_link_bar" href="#">3 app</a></span>
+                                    <span><a class="text-white text-decoration-none m_link_bar" href="#">3
+                                            app</a></span>
 
                                     <span>>></span>
+                                    <span class="d-none d-lg-block">
 
-                                    <span><a class="text-white text-decoration-none m_link_bar" href="#">Boolean Mobile app</a></span>
+                                        <span><a class="text-white text-decoration-none m_link_bar" href="#">Boolean
+                                                Mobile app</a></span>
 
-                                    <span><a class="text-white text-decoration-none m_link_bar" href="#">Boolean web app</a></span>
-                                    <span><a class="text-white text-decoration-none m_link_bar" href="">Bollean blog app</a></span>
+                                        <span><a class="text-white text-decoration-none m_link_bar" href="#">Boolean web
+                                                app</a></span>
+                                        <span><a class="text-white text-decoration-none m_link_bar" href="">Bollean blog
+                                                app</a></span></span>
+
+                                    <span class="d-lg-none d-xxl-block m_link_bar">
+                                        <a href="#"><i class="fa-solid fa-plus"></i></a>
+                                    </span>
+
                                 </div>
 
                             </div>
@@ -92,7 +103,113 @@
                             </div>
                             <div class="col col-sm-4 d-none d-sm-block">
                                 Nuovo Studente
+
+                                <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                        class="fa-solid fa-plus"></i></button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                                            Inserisci un nuovo studente
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close">
+                                        </button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="row gy-3">
+                                            <div class="col col-6">
+                                                <label for="#" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" placeholder="..."
+                                                    aria-label="First name">
+                                            </div>
+                                            <div class="col col-6">
+                                                <label for="#" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" placeholder="..."
+                                                    aria-label="Last name">
+                                            </div>
+
+                                            <div class="col col-6">
+                                                <label for="#" class="form-label">Email</label>
+                                                <div class="input-group flex-nowrap">
+                                                    <span class="input-group-text" id="addon-wrapping">@</span>
+                                                    <input type="text" class="form-control" placeholder="..."
+                                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                                </div>
+                                            </div>
+
+                                            <div class="col col-6">
+                                                <label for="inputPassword5" class="form-label">Password</label>
+                                                <input type="password" id="inputPassword5" class="form-control"
+                                                    aria-describedby="passwordHelpBlock">
+
+                                            </div>
+
+                                            <div class="col col-12">
+                                                <label for="#" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" placeholder="..."
+                                                    aria-label="Indirizzo">
+                                            </div>
+
+                                            <div class="col col-6">
+                                                <label for="#" class="form-label">Città</label>
+                                                <input type="text" class="form-control" placeholder="..."
+                                                    aria-label="city">
+                                            </div>
+
+                                            <div class="col col-4">
+                                                <label for="#" class="form-label">Stato</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Scegli..</option>
+                                                    <option value="1">Italy</option>
+                                                    <option value="2">England</option>
+                                                    <option value="3">Usa</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col col-2">
+                                                <label for="#" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" placeholder="..."
+                                                    aria-label="CAP">
+                                            </div>
+
+                                            <div class="col col-12">
+                                                <label for="formFile" class="form-label">Foto</label>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+
+                                            <div class="col form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Seleziona per proseguire
+                                                </label>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined"
+                                                    autocomplete="off">
+
+
+                                                <input type="radio" class="btn-check" name="options-outlined"
+                                                    id="success-outlined" autocomplete="off" checked>
+                                                <label class="btn btn-primary" for="success-outlined">Salva</label>
+
+                                                <input type="radio" class="btn-check" name="options-outlined"
+                                                    id="danger-outlined" autocomplete="off">
+                                                <label class="btn btn-warning" for="danger-outlined">Svuota</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
+
+
 
                         </div>
 
@@ -123,7 +240,9 @@
 
     </main>
     <!--/site_main-->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
