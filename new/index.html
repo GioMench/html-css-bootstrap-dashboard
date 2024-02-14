@@ -13,7 +13,54 @@
   </head>
 
   <body>
-    <header id="site_header"></header>
+    
+    <header id="site_header">
+
+      <nav class="navbar bg-body-tertiary">
+
+        <div class="container-fluid" style="flex-wrap: nowrap;">
+
+            <!--logo-->
+            <a class="navbar-brand" href="#">
+                <img src="../asstes/css/img/mobile-logo.png" alt="Bootstrap" width="50" height="50"
+                    class="d-xl-none">
+                <img src="../asstes/css/img/logo.svg" alt="Bootstrap" width="150" height="60"
+                    class="d-none d-xl-block">
+            </a>
+
+            <!--search_bar-->
+            <form class="d-flex justify-center" role="search"
+                style=" background-color: #e5e5e5; border-radius: 5px; margin:auto; width:80%">
+                <button type="button" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="form-control me-2 fs-smaller p-0" type="search"
+                    placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Search"
+                    style="border: none; background-color: #e5e5e5;">
+            </form>
+
+            <!--link_items-->
+            <div class="d-flex" style="flex-wrap: nowrap;">
+                <a class="nav-link d-none d-xl-block px-1" aria-current="page" href="#">
+                    <i class="fa-solid fa-list"></i>
+                </a>
+
+                <a class="nav-link d-none d-xl-block px-1" href="#">
+                    <i class="fa-solid fa-question"></i>
+                </a>
+
+                <a class="nav-link d-none d-xl-block px-1" href="#">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </a>
+
+                <a class="nav-link disabled d-block px-1" aria-disabled="true">
+                    <i class="fa-solid fa-bell"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+
+    </header>
     <!--/site_header-->
 
     <div id="wrapper" class="d-flex debug">
