@@ -66,3 +66,11 @@ body {
         }
     }
 }
+
+/*REGION SIDEBAR*/
+
+#sidebar{
+    background-color: #041f34;
+    background-image: url(../asstes/css/img/sidebar-bg.png);
+    
+}
