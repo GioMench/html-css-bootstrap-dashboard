@@ -30,14 +30,14 @@ body {
 /*REGION HEADER*/
 
 #site_header {
-    height: 70px;
+    height: 90px;
     background-color: var(--bod-pageback);
 }
 
 /*REGION WRAPPER*/
 
 #wrapper {
-    height: calc(100% - 70px);
+    height: calc(100% - 90px);
 
     #sidebar {
         width: 70px;
@@ -51,7 +51,7 @@ body {
 
         .banner {
             background-color: var(--bod-primary);
-            min-height: 100px;
+            min-height: 90px;
         }
     }
 }
@@ -72,5 +72,13 @@ body {
 #sidebar{
     background-color: #041f34;
     background-image: url(../asstes/css/img/sidebar-bg.png);
-    
+}
+
+/*REGION BANNER*/
+
+.m_link_bar{
+    padding:2px 7px;
+    background-color: #165bba;
+    border-radius: 20px;
+    font-size:x-small;
 }
