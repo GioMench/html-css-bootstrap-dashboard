@@ -67,18 +67,25 @@ body {
     }
 }
 
+.m_link_hover:hover {
+    
+    background-color: grey;
+
+}
 /*REGION SIDEBAR*/
 
-#sidebar{
+#sidebar {
     background-color: #041f34;
     background-image: url(../asstes/css/img/sidebar-bg.png);
 }
 
+
+
 /*REGION BANNER*/
 
-.m_link_bar{
-    padding:2px 7px;
+.m_link_bar {
+    padding: 2px 7px;
     background-color: #165bba;
     border-radius: 20px;
-    font-size:x-small;
+    font-size: x-small;
 }
