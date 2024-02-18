@@ -2,640 +2,304 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./asstes/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Bootstrap dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Bootstrap-dashboard2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./asstes/css/style.css">
 </head>
 
 <body>
 
-    <header id="site_header" class="debug">
+  <header id="site_header">
 
+    <nav class="navbar bg-body-tertiary">
 
+      <div class="container-fluid" style="flex-wrap: nowrap;">
 
+        <!--logo-->
+        <a class="navbar-brand" href="#">
+          <img src="./asstes/css/img/mobile-logo.png" alt="Bootstrap" width="50" height="50" class="d-xl-none">
+          <img src="./asstes/css/img/logo.svg" alt="Bootstrap" width="150" height="60" class="d-none d-xl-block">
+        </a>
 
-    </header>
-    <!--/site_header-->
+        <!--search_bar-->
+        <form class="d-flex justify-center" role="search"
+          style=" background-color: #e5e5e5; border-radius: 5px; margin:auto; width:80%">
+          <button type="button" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input class="form-control me-2 fs-smaller p-0" type="search"
+            placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Search"
+            style="border: none; background-color: #e5e5e5;">
+        </form>
 
-    <main id="site_main" class="container-fluid ">
+        <!--link_items-->
+        <div class="d-flex" style="flex-wrap: nowrap;">
+          <a class="nav-link d-none d-xl-block px-1" aria-current="page" href="#">
+            <i class="fa-solid fa-list"></i>
+          </a>
 
+          <a class="nav-link d-none d-xl-block px-1" href="#">
+            <i class="fa-solid fa-question"></i>
+          </a>
 
+          <a class="nav-link d-none d-xl-block px-1" href="#">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </a>
 
-        <div class="row">
+          <a class="nav-link disabled d-block px-1" aria-disabled="true">
+            <i class="fa-solid fa-bell"></i>
+          </a>
+        </div>
 
-            <nav class="nav flex-column col-1 m_nav_vertical">
+      </div>
 
-                <a class="nav-link active text-white fw-medium" aria-current="page" href="#">
-                    <i class="fa-solid fa-house"></i>
-                    <span class="d-sm-none d-md-block d-none d-sm-block">Home</span>
-                </a>
+    </nav>
 
-                <a class="nav-link text-white fw-medium" href="#">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <span class="d-sm-none d-md-block d-none d-sm-block">Stats</span>
-                </a>
-                <a class="nav-link text-white fw-medium" href="#">
-                    <i class="fa-solid fa-signal"></i>
-                    <span class="d-sm-none d-md-block d-none d-sm-block">Signal</span>
-                </a>
-
-                <a class="nav-link text-white fw-lighter fixed-bottom" href="#">
-                    <i class="fa-solid fa-gear"></i>
-                    <span class="d-sm-none d-md-block d-none d-sm-block">Admim</span>
-                </a>
+  </header>
+  <!--/site_header-->
 
-            </nav>
+  <div id="wrapper" class="d-flex debug">
 
-
-
-            <div class="col-11 m_container_right">
+    <div id="sidebar">
 
-                <div class="row">
-
-                    <div class="col-12 m_blue_bar py-3">
-
-                        <div class="row text-white justify-between gy-2">
-
-                            <div class="col col-12 d-block d-sm-none">
-                                Nuovo Studente
-                            </div>
-
-                            <div class="col col-12 col-sm-4">
-                                <div>
-                                    Boolean
-                                    <span><a class="text-white text-decoration-none m_link_bar" href="#">Piano
-                                            Blaze</a></span>
-                                </div>
-                                <div>
-                                    <span><a class="text-white text-decoration-none m_link_bar" href="#">3
-                                            app</a></span>
-
-                                    <span class="fw-lighter" style="font-size: x-small;">>></span>
-                                    <span class="d-none d-lg-block">
-
-                                        <span><a class="text-white text-decoration-none m_link_bar" href="#">Boolean
-                                                Mobile app</a></span>
-
-                                        <span><a class="text-white text-decoration-none m_link_bar" href="#">Boolean web
-                                                app</a></span>
-                                        <span><a class="text-white text-decoration-none m_link_bar" href="">Bollean blog
-                                                app</a></span></span>
-
-                                    <span class="d-lg-none d-xxl-block m_link_bar">
-                                        <a href="#"><i class="fa-solid fa-plus"></i></a>
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col col-12 col-sm-4">
-                                <div style="font-size: small;">
-                                    Studenti online negl'ultimi 30 minuti
-                                </div>
-                                <div>125</div>
-                            </div>
-                            <div class="col col-sm-4 d-none d-sm-block" style="font-size: small;">
-                                Nuovo Studente
-
-                                <button class="btn btn-outline-light btn-sm mx-4 px-2 py-0.5" type="button"
-                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                                    aria-controls="offcanvasRight">
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" style="width: 700px;"
-                                    aria-labelledby="offcanvasRightLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                                            Inserisci un nuovo studente
-                                        </h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                            aria-label="Close">
-                                        </button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div class="row gy-3">
-                                            <div class="col col-6">
-                                                <label for="#" class="form-label">Nome</label>
-                                                <input type="text" class="form-control" placeholder="..."
-                                                    aria-label="First name">
-                                            </div>
-                                            <div class="col col-6">
-                                                <label for="#" class="form-label">Cognome</label>
-                                                <input type="text" class="form-control" placeholder="..."
-                                                    aria-label="Last name">
-                                            </div>
-
-                                            <div class="col col-6">
-                                                <label for="#" class="form-label">Email</label>
-                                                <div class="input-group flex-nowrap">
-                                                    <span class="input-group-text" id="addon-wrapping">@</span>
-                                                    <input type="text" class="form-control" placeholder="..."
-                                                        aria-label="Username" aria-describedby="addon-wrapping">
-                                                </div>
-                                            </div>
-
-                                            <div class="col col-6">
-                                                <label for="inputPassword5" class="form-label">Password</label>
-                                                <input type="password" id="inputPassword5" class="form-control"
-                                                    aria-describedby="passwordHelpBlock">
-
-                                            </div>
-
-                                            <div class="col col-12">
-                                                <label for="#" class="form-label">Indirizzo</label>
-                                                <input type="text" class="form-control" placeholder="..."
-                                                    aria-label="Indirizzo">
-                                            </div>
-
-                                            <div class="col col-6">
-                                                <label for="#" class="form-label">Città</label>
-                                                <input type="text" class="form-control" placeholder="..."
-                                                    aria-label="city">
-                                            </div>
-
-                                            <div class="col col-4">
-                                                <label for="#" class="form-label">Stato</label>
-                                                <select class="form-select" aria-label="Default select example">
-                                                    <option selected>Scegli..</option>
-                                                    <option value="1">Italy</option>
-                                                    <option value="2">England</option>
-                                                    <option value="3">Usa</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col col-2">
-                                                <label for="#" class="form-label">CAP</label>
-                                                <input type="text" class="form-control" placeholder="..."
-                                                    aria-label="CAP">
-                                            </div>
-
-                                            <div class="col col-12">
-                                                <label for="formFile" class="form-label">Foto</label>
-                                                <input class="form-control" type="file" id="formFile">
-                                            </div>
-
-                                            <div class="col form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="defaultCheck1">
-                                                <label class="form-check-label" for="defaultCheck1">
-                                                    Seleziona per proseguire
-                                                </label>
-                                            </div>
-
-                                            <div class="col-12">
-                                                <input type="checkbox" class="btn-check" id="btn-check-outlined"
-                                                    autocomplete="off">
-
-
-                                                <input type="radio" class="btn-check" name="options-outlined"
-                                                    id="success-outlined" autocomplete="off" checked>
-                                                <label class="btn btn-primary" for="success-outlined">Salva</label>
-
-                                                <input type="radio" class="btn-check" name="options-outlined"
-                                                    id="danger-outlined" autocomplete="off">
-                                                <label class="btn btn-warning" for="danger-outlined">Svuota</label>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-
-
-                        </div>
-
-                    </div>
-                    <!--/bar_blue-->
-
-                    <div class="col-lg-8 col-md-12">
-
-                        <div class="row ">
-                            <div class="col-12 py-4">
-                                <div class="card ">
-                                    <div class="card-header fw-medium fs-5">
-                                        Prossime classi
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">
-                                            <div class="row justify-between" style="font-size: 0.8rem;">
-                                                <div class="col-6">
-                                                    Nome
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="row text-center">
-                                                        <div class="col-3 d-none d-sm-block">Data inizio</div>
-                                                        <div class="col-3 text-uppercase d-none d-sm-block">roi</div>
-                                                        <div class="col-3">Stato</div>
-                                                        <div class="col-3">Azioni</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-
-                                        <li class="list-group-item">
-                                            <div class="row justify-between " style="font-size: 0.8rem;">
-                                                <div class="col-6 ">
-                                                    <div class="row my-1">
-                                                        <div class="col-1">
-                                                            <img src="./asstes/css/img/class-avatar.jpg" alt=""
-                                                                style="display: block; width: 20px;">
-                                                        </div>
-                                                        <div class="col-3">Classe 75</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="row text-center align-items-center">
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            15 Feb 2021
-                                                        </div>
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            20%
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button" class="btn btn-success btn-sm"
-                                                                style="padding: 1px 5px; border-radius: 10px;">done</button>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-pen"></i>
-                                                            </button>
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!--/classe75-->
-
-                                        <li class="list-group-item">
-                                            <div class="row justify-between " style="font-size: 0.8rem;">
-                                                <div class="col-6 ">
-                                                    <div class="row my-1">
-                                                        <div class="col-1">
-                                                            <img src="./asstes/css/img/class-avatar.jpg" alt=""
-                                                                style="display: block; width: 20px;">
-                                                        </div>
-                                                        <div class="col-3">Classe 76</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="row text-center align-items-center">
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            16 Feb 2021
-                                                        </div>
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            20%
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button" class="btn btn-success btn-sm"
-                                                                style="padding: 1px 5px; border-radius: 10px;">done</button>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-pen"></i>
-                                                            </button>
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!--/classe76-->
-
-                                        <li class="list-group-item">
-                                            <div class="row justify-between " style="font-size: 0.8rem;">
-                                                <div class="col-6 ">
-                                                    <div class="row my-1">
-                                                        <div class="col-1">
-                                                            <img src="./asstes/css/img/class-avatar.jpg" alt=""
-                                                                style="display: block; width: 20px;">
-                                                        </div>
-                                                        <div class="col-3">Classe 77</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="row text-center align-items-center">
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            17 Feb 2021
-                                                        </div>
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            20%
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button"
-                                                                class="btn btn-warning btn-sm text-white"
-                                                                style="padding: 1px 5px; border-radius: 10px;">process</button>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-pen"></i>
-                                                            </button>
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!--/classe77-->
-
-                                        <li class="list-group-item">
-                                            <div class="row justify-between " style="font-size: 0.8rem;">
-                                                <div class="col-6 ">
-                                                    <div class="row my-1">
-                                                        <div class="col-1">
-                                                            <img src="./asstes/css/img/class-avatar.jpg" alt=""
-                                                                style="display: block; width: 20px;">
-                                                        </div>
-                                                        <div class="col-3">Classe 78</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="row text-center align-items-center">
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            18 Feb 2021
-                                                        </div>
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            20%
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button" class="btn btn-success btn-sm"
-                                                                style="padding: 1px 5px; border-radius: 10px;">done</button>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-pen"></i>
-                                                            </button>
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!--/classe78-->
-
-                                        <li class="list-group-item">
-                                            <div class="row justify-between " style="font-size: 0.8rem;">
-                                                <div class="col-6 ">
-                                                    <div class="row my-1">
-                                                        <div class="col-1">
-                                                            <img src="./asstes/css/img/class-avatar.jpg" alt=""
-                                                                style="display: block; width: 20px;">
-                                                        </div>
-                                                        <div class="col-3">Classe 79</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="row text-center align-items-center">
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            19 Feb 2021
-                                                        </div>
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            20%
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button"
-                                                                class="btn btn-danger btn-sm text-white"
-                                                                style="padding: 1px 5px; border-radius: 10px;">failed</button>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-pen"></i>
-                                                            </button>
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!--/classe79-->
-
-                                        <li class="list-group-item">
-                                            <div class="row justify-between " style="font-size: 0.8rem;">
-                                                <div class="col-6 ">
-                                                    <div class="row my-1">
-                                                        <div class="col-1">
-                                                            <img src="./asstes/css/img/class-avatar.jpg" alt=""
-                                                                style="display: block; width: 20px;">
-                                                        </div>
-                                                        <div class="col-3">Classe 80</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="row text-center align-items-center">
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            20 Feb 2021
-                                                        </div>
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            20%
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button" class="btn btn-success btn-sm"
-                                                                style="padding: 1px 5px; border-radius: 10px;">done</button>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-pen"></i>
-                                                            </button>
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!--/classe80-->
-
-                                        <li class="list-group-item">
-                                            <div class="row justify-between " style="font-size: 0.8rem;">
-                                                <div class="col-6 ">
-                                                    <div class="row my-1">
-                                                        <div class="col-1">
-                                                            <img src="./asstes/css/img/class-avatar.jpg" alt=""
-                                                                style="display: block; width: 20px;">
-                                                        </div>
-                                                        <div class="col-3">Classe 81</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="row text-center align-items-center">
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            21 Feb 2021
-                                                        </div>
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            20%
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button"
-                                                                class="btn btn-danger btn-sm text-white"
-                                                                style="padding: 1px 5px; border-radius: 10px;">failed</button>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-pen"></i>
-                                                            </button>
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!--/classe81-->
-
-                                        <li class="list-group-item">
-                                            <div class="row justify-between " style="font-size: 0.8rem;">
-                                                <div class="col-6">
-                                                    <div class="row my-1">
-                                                        <div class="col-1">
-                                                            <img src="./asstes/css/img/class-avatar.jpg" alt=""
-                                                                style="display: block; width: 20px;">
-                                                        </div>
-                                                        <div class="col-5">Classe 82</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <div class="row text-center align-items-center">
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            22 Feb 2021
-                                                        </div>
-                                                        <div class="col-3 d-none d-sm-block">
-                                                            20%
-                                                        </div>
-                                                        <div class="col-2 col-md-3">
-                                                            <button type="button" class="btn btn-success btn-sm"
-                                                                style="padding: 1px 5px; border-radius: 10px;">done</button>
-                                                        </div>
-                                                        <div class="col-4 col-md-3">
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-pen"></i>
-                                                            </button>
-                                                            <button type="button"
-                                                                class="btn btn-outline-secondary btn-sm">
-                                                                <i class="fa-solid fa-trash"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!--/classe82-->
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <!--/next_class-->
-
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-header text-uppercase fw-bold fs-5">
-                                       f.a.q
-                                    </div>
-
-                                    <div class="accordion" id="accordionExample">
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                              Come aggiungere un  nuovo studente? 
-                                            </button>
-                                          </h2>
-                                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                              Come posso accedere alle informazioni del mio account?
-                                            </button>
-                                          </h2>
-                                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                             Posso usare questa dashboard da mobile?
-                                            </button>
-                                          </h2>
-                                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                </div>
-
-                            </div>
-                            <!--/F.A.Q-->
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 "></div>
-
-
-                </div>
+      <nav class="nav flex-column fw-medium" style="padding-top: 30px;">
+        <!--home-icon-->
+        <a class="nav-link text-white d-flex " href="#">
+
+          <i class="fa-solid fa-house fs-5 px-2"></i>
+          <span class="d-none d-xl-block ">
+            Home
+          </span>
+
+        </a>
+
+        <!--chart-icon-->
+        <a class="nav-link text-white d-flex" href="#">
+
+          <i class="fa-solid fa-chart-simple fs-5 px-2"></i>
+          <span class="d-none d-xl-block">
+            Stats
+          </span>
+
+        </a>
+
+        <!--signal-icon-->
+        <a class="nav-link text-white d-flex " href="#">
+
+          <i class="fa-solid fa-signal fs-5 px-2"></i>
+          <span class="d-none d-xl-block">
+            Signal
+          </span>
+
+        </a>
+
+        <!--gear-icon-->
+        <a class="nav-link text-white fw-lighter fixed-bottom d-flex" href="#">
+
+          <i class="fa-solid fa-gear fs-6 px-2"></i>
+          <span class="d-none d-xl-block">
+            Admim
+          </span>
+
+        </a>
+
+      </nav>
+
+    </div>
+
+    <main>
+
+      <div class="banner container-fluid">
+        <div class="row text-white justify-between py-2 gy-2">
+
+          <!--boolean-app-->
+          <div class="col-12 col-sm-4 order-2">
+            <div class="fs-4 fw-medium">
+              Boolean
+              <span><a class="text-white text-decoration-none m_link_bar" href="#">Piano
+                  Blaze</a></span>
+            </div>
+            <div>
+              <span>
+                <a class="text-white text-decoration-none m_link_bar" href="#">3
+                  app</a>
+              </span>
+
+              <span class="fw-lighter" style="font-size: x-small;">>></span>
+
+              <span class="d-none d-xl-block">
+                <!--hidden-elements-->
+                <span><a class="text-white text-decoration-none m_link_bar" href="#">Boolean
+                    Mobile app</a></span>
+
+                <span><a class="text-white text-decoration-none m_link_bar" href="#">Boolean web
+                    app</a></span>
+                <span><a class="text-white text-decoration-none m_link_bar" href="">Bollean blog
+                    app</a></span></span>
+              <!--plus-hidden-xl-->
+              <span class="d-xl-none m_link_bar ">
+                <a href="#"><i class="fa-solid fa-plus text-white"></i></a>
+              </span>
 
             </div>
 
+          </div>
+
+          <!--students-->
+          <div class="col-12 col-sm-4 order-3">
+            <div style="font-size: small;">
+              Studenti online negl'ultimi 30 minuti
+            </div>
+            <div>125</div>
+          </div>
+
+          <!--hidden-xs-->
+          <div class="col-sm-4 order-1 order-sm-4" style="font-size: small;">
+            Nuovo Studente
+
+            <!--button-plus-->
+            <button class="btn btn-outline-light btn-sm mx-4 px-2 py-0.5" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <!--offcanvas-right-->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" style="width: 700px;"
+              aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <!--title-offcanvas-->
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                  Inserisci un nuovo studente
+                </h5>
+                <!--close-button-offcanvas-->
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
+              </div>
+
+              <div class="offcanvas-body">
+
+                <div class="row gy-3">
+                  <!--name-input-offcanvas--->
+                  <div class="col col-6">
+                    <label for="#" class="form-label">Nome</label>
+                    <input type="text" class="form-control" placeholder="..." aria-label="First name">
+                  </div>
+                  <!--surname-input-offcanvas--->
+                  <div class="col col-6">
+                    <label for="#" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" placeholder="..." aria-label="Last name">
+                  </div>
+                  <!--email-input-offcanvas--->
+                  <div class="col col-6">
+                    <label for="#" class="form-label">Email</label>
+                    <div class="input-group flex-nowrap">
+                      <span class="input-group-text" id="addon-wrapping">@</span>
+                      <input type="text" class="form-control" placeholder="..." aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                    </div>
+                  </div>
+                  <!--pass-input-offcanvas--->
+                  <div class="col-6">
+                    <label for="inputPassword5" class="form-label">Password</label>
+                    <input type="password" id="inputPassword5" class="form-control"
+                      aria-describedby="passwordHelpBlock">
+
+                  </div>
+                  <!--address-input-offcanvas--->
+                  <div class="col-12">
+                    <label for="#" class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control" placeholder="..." aria-label="Indirizzo">
+                  </div>
+                  <!--city-input-offcanvas--->
+                  <div class="col-6">
+                    <label for="#" class="form-label">Città</label>
+                    <input type="text" class="form-control" placeholder="..." aria-label="city">
+                  </div>
+                  <!--state-input-offcanvas--->
+                  <div class="col col-4">
+                    <label for="#" class="form-label">Stato</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Scegli..</option>
+                      <option value="1">Italy</option>
+                      <option value="2">England</option>
+                      <option value="3">Usa</option>
+                    </select>
+                  </div>
+                  <!--cap-input-offcanvas--->
+                  <div class="col col-2">
+                    <label for="#" class="form-label">CAP</label>
+                    <input type="text" class="form-control" placeholder="..." aria-label="CAP">
+                  </div>
+                  <!--photo-input-offcanvas--->
+                  <div class="col col-12">
+                    <label for="formFile" class="form-label">Foto</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  <!--checkbox-input-offcanvas--->
+                  <div class="col form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Seleziona per proseguire
+                    </label>
+                  </div>
+                  <!--btn-input-offcanvas--->
+                  <div class="col-12">
+                    <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+
+                    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined"
+                      autocomplete="off" checked>
+                    <label class="btn btn-primary" for="success-outlined">Salva</label>
+
+                    <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined"
+                      autocomplete="off">
+                    <label class="btn btn-warning" for="danger-outlined">Svuota</label>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
 
         </div>
 
+      </div>
+      <!--/site_banner-->
 
+      <div class="container-fluid">
 
+        <div class="row">
 
+          <div class="col-12 col-xl-8"></div>
+          <!--/col_8_container-->
+
+          <div class="col-12 col-xl-4"></div>
+          <!--/col_4_container-->
+
+        </div>
+
+      </div>
+      <!--/container_right-->
 
     </main>
-    <!--/site_main-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <!--/site-main-->
+
+  </div>
+  <!--/site_wrapper-->
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

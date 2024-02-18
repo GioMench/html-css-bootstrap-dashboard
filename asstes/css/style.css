@@ -1,93 +1,84 @@
-/*MY UTILITY
-.nav_bar {
-    height: 80px;
-    background-color: aquamarine;
+/*REGION DEBUG*/
+* {
+    border: 1px dashed;
 }
 
+.debug {}
 
-.nav_bar_vertical {
-    width: 90px;
-    height: 1000px;
-    background-color: black;
+
+
+
+
+
+
+/*REGION MY UTILITIES*/
+:root {
+    --bod-primary: #1b72e8;
+    --bod-pageback: #f8f9fa;
+    --bod-lighter: #fefeff;
+    --bod-dark: #165bba;
+    --bod-darkest: #041f34;
+    --bod-bell: #fe9004;
 }
 
-
-.blue_bar {
-    height: 90px;
-    background-color: blue;
-}*/
-
-.box_1 {
-    width: 700px;
-    height: 1000px;
-    background-color: brown;
+body {
+    height: 100vh;
+    overflow: hidden;
 }
 
-.box_2 {
-    height: 800px;
-    background-color: antiquewhite;
-}
-
-.box_2a {
-    height: 80px;
-    background-color: blueviolet;
-}
-
-.box_2b {
-    height: 40px;
-    background-color: aquamarine;
-}
-
-.box_3 {
-    height: 800px;
-    background-color: chocolate;
-}
-
-
-
-:root{
-    --bd-darkest:#041f34;
-    --bd-light:#f8f9fa;
-    --bd-lighter:#fefeff;
-    --bd-secondary:#e5e5e5;
-    --bd-primary:#1b72e8;
-    --bd-danger:#dd3445;
-    --bd-succes:#3d9b6e;
-    --bd-standby:#ffc82b;
-}
 
 /*REGION HEADER*/
 
-img {
-    display: block;
-
+#site_header {
+    height: 90px;
+    background-color: var(--bod-pageback);
 }
 
-.m_logo_navbar_cell {
-    width: 50px;
+/*REGION WRAPPER*/
+
+#wrapper {
+    height: calc(100% - 90px);
+
+    #sidebar {
+        width: 70px;
+        flex-shrink: 0;
+
+    }
+
+    & main {
+        flex-grow: 1;
+        overflow-y: auto;
+
+        .banner {
+            background-color: var(--bod-primary);
+            min-height: 90px;
+        }
+    }
 }
 
+@media screen and (min-width: 1200px) {
 
-/*REGION MAIN*/
-.m_nav_vertical {
-    background-image: url(./img/sidebar-bg.png);
-    background-color: var(--bd-darkest);
-    height: 100vh;
-    
+    #wrapper {
+
+        #sidebar {
+            width: 148px;
+
+        }
+    }
 }
 
-.m_container_right{
-    overflow: auto;
+/*REGION SIDEBAR*/
+
+#sidebar{
+    background-color: #041f34;
+    background-image: url(../asstes/css/img/sidebar-bg.png);
 }
 
-.m_blue_bar{
-    background-color: var(--bd-primary);
-}
+/*REGION BANNER*/
 
 .m_link_bar{
     padding:2px 7px;
     background-color: #165bba;
     border-radius: 20px;
-    font-size: x-small; 
+    font-size:x-small;
 }
-
